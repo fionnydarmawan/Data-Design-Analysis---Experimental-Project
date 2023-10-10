@@ -1,0 +1,315 @@
+---
+title: "Manipulating RNA-based Therapeutics to increase Treament Efficacy"
+author: "Fionny Darmawan"
+date: "06/09/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(eval = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+install.packages("devtools")
+```
+
+```{r main instructions, include=FALSE}
+# Final Term Project Write-up Instructions
+
+#Please complete the following:
+
+#1.  Each section will have headings and 1-2 code blocks. Do not edit the headings for each section (anything with one or more #'s at the start of the line. The first code block will be instructions for that section and will not be knit into the final document. The second code block (if present) will be for you to include your own code needed to complete the section. It will be knitted and presented in the final document. 
+
+#2.  Examine all the feedback you got on checkpoint 1, 2, and 3. Do you need to modify your question, prediction, hypothesis, experimental design, or analytical plan? This term paper will be graded on its own merit, separate from how you did on any of the checkpoints. You are not held to the decisions you made on previous checkpoints. You are only required to use the same primary statistical test that you included on the survey generating your simulated data.
+
+#3. Make any citations as needed. You must include inline citations (Author, year), as well as an APA formatted bibliography at the end. This includes any URLs where you copied code. You do not need to cite any course materials. Remember, copying code is encouraged. It's your words that need to be original.
+
+#4. Feel free to copy and paste anything you'd like from your previous checkpoint assignments.
+
+#5.  Knit your .RMD document as an html and submit it on Canvas. It is due Sunday June 5th at 11:59PM PST. Be aware that late penalties will be assessed.
+```
+
+```{r Section1 instructions, include=FALSE}
+#Below the appropriate headings, write in your responses.
+
+#The Question: Write out your overall biological question in a single sentence.
+
+#Disclaimer: Do not edit this text:
+
+#Rationale and Background: Include here a short paragraph (~300-500 words) providing basic, relevant background and your rationale for asking the question. Pretend your audience is a UCSD undergraduate first-year biology major.
+
+```
+
+# [The Question]{.ul}
+
+How can RNA-based therapeutics be combined with other therapies to enhance their effectiveness?
+
+#### Disclaimer: This project analyzes simulated data. The questions and hypotheses are real, but the results and conclusions are not.
+
+### *Sub-Field of Biology:*
+
+Biotechnology
+
+### *Rationale and Background:*
+
+My background for asking this question is my interest in learning about the advancements that scientists have researched and experimented with RNA molecules, by creating these RNA based therapeutics drugs to modulate gene expression and treat various diseases. After reading some relevant articles below, it seems like they offer the potential to target specific genes and pathways involved in disease processes, providing a more targeted and personalized approach to therapy. RNA based therapies are currently still being developed and experimented, focused on the applications of diseases like cancer and rare genetic diseases. After further looking into this development, it seems like the effectiveness of these RNA based therapeutics are not very stable and can easily be influenced by off target effects and their deliveries as therapeutic drugs. Challenges in deliveries refer to the difficulties in effectively and safely delivering RNA-based therapeutics to their intended target cells or tissues within the body. Off-target effects occur when RNA-based therapeutics interact with unintended targets in the body, leading to unintended biological effects. The rationale behind this question is that we want to optimize the potential these RNA based therapeutics and to overcome their limitations. By combining RNA-based therapeutics with other therapies such as small drug molecules, there is higher potential to improve treatment outcomes by synergistically targeting multiple aspects of a disease. This combination can potentially overcome challenges associated with delivery, off-target effects, and limited efficacy, leading to improved clinical outcomes for patients. By identifying effective combinations and understanding the underlying mechanisms, we can develop more effective treatment strategies that help increase capabilities of RNA-based therapeutics and other therapies. The ongoing research and development of such advancements are expanding the potential for RNA-based therapies to play a significant role in the future treatment and cure of a wide range of diseases. 
+
+------------------------------------------------------------------------
+
+```{r Section2 instructions, include=FALSE}
+#This section is the same as it was in first checkpoint. However, you may want to change your chosen paper if you have found any that are more relevant to your current project.
+
+```
+
+# [Examples of relevant literature]{.ul}
+
+### *Review article title:*
+
+“RNA therapy: rich history, various applications and unlimited future prospects”
+
+#### URL:
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9016686/
+
+#### Abstract:
+
+RNA therapy refers to the treatment or prevention of diseases using RNA-based molecules. The recent advent of a series of effective messenger RNA-based vaccines in response to the COVID-19 pandemic has reignited research interest in RNA therapy. Based on the accumulated results of long-term research in the field of RNA therapy spanning several decades, therapeutic agents for various diseases are being rapidly developed. These therapeutics tend to target diseases that cannot be treated with other conventional drug groups, and several clinical studies are underway for a variety of RNA-based therapeutics against various incurable diseases. This review describes the history of several important discoveries in RNA biology and their impact on key developments in RNA therapy as well as the advantages of RNA therapy. In addition, it describes the action mechanisms and examples of drugs approved for RNA therapy. Finally, this review discusses methods for RNA drug delivery to target organs and cells. Given that RNA therapy is expected to advance and play an integral role in the development of novel therapeutic agents for human diseases in the future, this review is designed to offer an updated reference point for researchers in this field.
+
+### *Relevant original research article title:*
+
+“A new developing class of gene delivery: messenger RNA-based therapeutics”
+
+#### URL:
+
+https://pubs.rsc.org/en/content/articlehtml/2017/bm/c7bm00712d
+
+#### Abstract:
+
+Gene therapy has long been held as having the potential to become a front line treatment for various genetic disorders. However, the direct delivery of nucleic acids to correct a genetic disorder has numerous limitations owing to the inability of naked nucleic acids (DNA and RNA) to traverse the cell membrane. Recently, messenger RNA (mRNA) based delivery has become a more attractive alternative to DNA due to the relatively easier transfection process, higher efficiency and safety profile. As with all gene therapies, the central challenge that remains is the efficient delivery of nucleic acids intracellularly. This review presents the recent progress in mRNA delivery, focusing on comparing the advantages and limitations of non-viral based delivery vectors.
+
+------------------------------------------------------------------------
+
+```{r Section3 instructions, include=FALSE}
+#Fill out the following sections. Each should only be a single sentence.
+
+
+```
+
+# [**Hypotheses**]{.ul}
+
+### *The Biological Hypothesis:*
+
+Combining RNA-based therapeutics with small molecule drugs that target complementary pathways may lead to synergistic effects, resulting in greater efficacy and reduced off-target effects compared to either therapy alone.
+
+### *The Biological Prediction:*
+
+Combining RNA-based therapeutics with small molecule drugs will lead to greater efficacy compared to either therapy alone. In other words, the combination of RNA-based therapeutics with small molecule drugs results in a more effective cure. 
+
+### *A Statistical Alternative Hypothesis:*
+
+The combination of RNA-based therapeutics and small molecule drugs will result in synergistic effects, a greater efficacy in the combination between the two than individually. There will be significant difference in the result. 
+
+### *A Statistical Null Hypothesis:*
+
+The combination of RNA-based therapeutics and small molecule drugs will result in no significant difference in terms of their synergistic effects over their individual effects.
+
+------------------------------------------------------------------------
+
+```{r Section4 instructions, include=FALSE}
+
+#You will also use this page to describe your overall experimental design. Each should be written in paragraph form and can be up to 300 words max. If appropriate, it should cover each of the following issues: randomization, blocking, stratification, controls (positive and/or negative), blinding. Make sure that this description matches the data you will be analyzing, not a bigger experiment with more variables that you will not have data for.
+
+#Explanatory and Response Variables - explicitly and simply state your explanatory/independent/x variable and your response/dependent/y variable.
+
+#Sample size - include a description of your sample size and a justification for your choice.
+
+```
+
+# [Experimental Design]{.ul}
+
+In this experiment, I will use an experimental design with 99 participants divided into 3 categorical control groups: Combination of RNA-based therapeutics and small drug molecules, RNA-based therapeutics alone, and small molecule drugs alone. The response variable is the percentage of cells that take up the mRNA or express the delivered mRNA in each treatment group being administered into the participants. The data that I will be analyzing will contain factors such as randomization where participants are randomly assigned with different treatments group with each group receiving a different combination of RNA-based therapies and the small molecule drugs, as well as each therapy individually. It also partly covers the issue of stratification and blocking where the data ensures that each treatment group includes an equal number of participants from each subgroup and block. Finally, the data covers the issue of blinding where neither the participants nor the researchers (me in this case) know which treatment group each participant is in. This then can reduce placebo effects or bias from the observer. The result of this experimental design will conclude whether or not the combination of RNA-based therapeutics and small molecule drugs will result in synergistic effects, or if there is a greater efficacy in the combination between the two than individually. 
+
+### *Sampling Design:*
+
+As mentioned above, my sampling design will be 99 human participants divided evenly into 3 control sub groups.This population of interest would be individuals who have been diagnosed with diseases or disorders that may be treated using RNA-based therapies. Of course with my sampling design being human participants, I would ensure that the drugs that I would administer to them would not cause any harm. I would enforce confidentiality and informed consent by ensuring that I fully inform participants the full course of the study and the potential risks the study might cause them. I will treat the samples of the combined RNA-based therapies and small molecule drugs, and each of them individually, as measures of their efficacy or their synergistic effects. These samples are measured in values of the percentage of cells that take up the mRNA and the percentage of cells expressing the delivered mRNA or the amount of mRNA expressed per cell. 
+
+### *Explanatory and Response Variables:*
+
+The explanatory/independent variable is the type of treatment being given, in this case there are three independent variables: Combination of RNA-based therapies and small drug molecules, RNA-based therapies alone, and small drug molecules alone. The response/dependent variable is the measures of efficacy or their synergistic effects.
+
+### *Sample size:*
+
+My sample size is 99 participants divided evenly across the 3 treatment groups. I believe that dividing it evenly would give an optimized result that increases my statistical power, reduces confounding variables (bias/difficult to determine the true effect of the independent variable), and makes it easier to identify the specific effects of the independent variable on the dependent variable.
+
+### *Alpha:*
+
+My alpha value is 0.05 (5%).Not only this is the standardized alpha value, but also this value would fit best for y experiment as it would show a balance between the two errors of incorrectly rejecting the null hypothesis when it is true, and failing to reject the null hypothesis when it is false.
+
+------------------------------------------------------------------------
+
+```{r Section5 instructions, include=FALSE}
+
+#Primary statistical analysis: Name the analysis you included on the survey form. In the next line, include a brief justification as to why this test is appropriate.
+
+```
+
+# [Data Analysis Plan]{.ul}
+
+For my analysis, I will use the ANOVA, which determines if there are significant differences in efficacy among the three treatment groups, using the ANOVA test. 
+
+I chose to do my analysis with a linear model with 3 categorical levels (ANOVA) to compare the effectiveness of different treatment combinations. This test would also help me determine if there are significant differences in efficacy among the 3 groups. I chose this test instead of regression because I want to have organized controlled groups rather than continuous independent variables of the dosage or concentration of the drugs. Same goes with methods like correlation or chi-squared test. They are more so dosage-dependent and would not really give results of significant difference of categorical levels.
+
+------------------------------------------------------------------------
+
+```{r Section6 instructions, include=FALSE}
+
+#Assumptions and EDA: List the assumptions of your chosen test here.
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(tidyverse)
+
+#Enter your code for all testing of assumptions and figures for EDA in the next code block. This will include reading in your data and making it tidy. You should also display the top of your data table - head(). Any figures you make or statistics your code creates should be labeled appropriately. It should be understandable to someone that does not have access to read your code.
+
+#After the code block, write a paragraph discussing your EDA results and if you had to do anything regarding outliers or data transformations. Remember to justify all of your decisions in writing.
+
+```
+
+# [Assumptions and Exploratory Data Analysis (EDA)]{.ul}
+
+For this experiment, I chose to use a Linear model with 3 categorical levels using the ANOVA test as my data model and primary statistical test. There are some assumptions of my chosen test that I've considered.One is independence; the observations within each treatment group should be independent of each other. Another assumption is normality in which the differences between the observed and predicted values should follow a normal distribution. The next assumption is consistency of variances where the variability of the residuals should be consistent across the treatment group. Another assumption is that the variances of efficacy scores within each treatment group are equal. Lastly,the relationship between treatment groups and efficacy is assumed to be linear. In other words, the effect of treatment group on efficacy is consistent across all levels of the independent variable.
+
+```{r Section6 STUDENT CODE BLOCK1, attr.source='.numberLines', include=TRUE}
+#USE THIS BLOCK TO INPUT NECESSARY CODE.
+TreatmentData<- read.csv("fdarmawan.csv")
+
+newTreatmentData<- TreatmentData %>%
+        select(-X)
+
+
+tidy_TreatmentData<- pivot_longer(newTreatmentData, everything(), names_to = "TreatmentGroup", values_to = "Efficacy")
+#head(tidy_TreatmentData)
+
+mean_value <- mean(tidy_TreatmentData$Efficacy)
+sd_value <- sd(tidy_TreatmentData$Efficacy)
+
+threshold <- 2
+
+outliers <- tidy_TreatmentData[tidy_TreatmentData$Efficacy > (mean_value + threshold * sd_value) | tidy_TreatmentData$Efficacy < (mean_value - threshold * sd_value), ]
+
+# Remove outliers from the dataframe
+newTidy_TreatmentData <- tidy_TreatmentData[!(tidy_TreatmentData$Efficacy %in% outliers$Efficacy), ]
+
+transformed_TreatmentData<- mutate(newTidy_TreatmentData, log_Efficacy = log(Efficacy))
+head(newTidy_TreatmentData)
+
+```
+
+### *Interpretation of EDA:*
+
+In this Experimental Design Analysis, I organized my original data into a tidy data that consists of 2 columns: One represents the independent variables of each treatment group being administered to the participants, and the other one is the dependent variable of the measures of efficacy or their synergistic effects. I organized by data into a tidy data so that it would fit my linear model and allows for testing using the ANOVA. A tidy data allows me to have easy aggregation and summarization of the data by treatment groups. After creating and testing the my data model, it seems like the results that I am getting do not indicate a significant difference in my hypothesis. So I decided to transform my tidy data using log() transform function, so that my analysis follows more of normal distributed model. 
+
+------------------------------------------------------------------------
+
+```{r Section7 instructions, include=FALSE}
+
+#Primary Statistical Analysis: In the next code block, you will conduct your primary statistical test and any necessary post-hoc tests. Do NOT include your own written interpretation here.
+
+```
+
+# [Primary Statistical Analysis]{.ul}
+
+```{r Section7 STUDENT CODE BLOCK2, attr.source='.numberLines', include=TRUE}
+#USE THIS BLOCK TO INPUT NECESSARY CODE.
+TreatmentModel<- lm(`log_Efficacy` ~ `TreatmentGroup`, data = transformed_TreatmentData)
+summary(TreatmentModel)
+
+TreatmentModelTest<- aov(`log_Efficacy` ~ `TreatmentGroup`, data = transformed_TreatmentData)
+summary(TreatmentModelTest)
+
+post_hoc_TreatmentModelTest<- TukeyHSD(TreatmentModelTest)
+summary(post_hoc_TreatmentModelTest)
+
+```
+
+------------------------------------------------------------------------
+
+
+```{r Section9 instructions, include=FALSE}
+
+#Primary Figure: In the next code block, you will create a single well-designed figure in ggplot that will clearly show a reader patterns in your data.
+
+```
+
+# [Data Visualization]{.ul}
+
+```{r Section9 STUDENT CODE BLOCK4, attr.source='.numberLines', include=TRUE}
+#USE THIS BLOCK TO INPUT NECESSARY CODE.
+Treatment_Histogram<- ggplot(transformed_TreatmentData, aes(x = log_Efficacy)) +
+                         geom_histogram() + 
+                        labs(x = "% Efficacy", y = "Treatment Groups")
+Treatment_Histogram 
+
+colors <- c("cornflowerblue", "darkorange2", "gold1")
+
+y_lower <- 3
+y_upper <- 4.5
+
+Treatment_boxPlot<- ggplot(transformed_TreatmentData, aes(x = TreatmentGroup, y = log_Efficacy)) +    
+  geom_boxplot(fill = colors) + 
+  ylim(y_lower, y_upper) + 
+  labs(x = "Treatment Groups", y = "% cells that take up/expressed the delivered mRNA (log)") + 
+  theme_minimal() + 
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    axis.line = element_line(size = 0.5)
+  ) + 
+  scale_x_discrete(labels = c("Combination", "RNA", "Molecule")) + 
+  scale_fill_manual(values = colors)
+  
+Treatment_boxPlot
+
+```
+
+------------------------------------------------------------------------
+
+```{r Section10 instructions, include=FALSE}
+
+#Conclusions: This is the section where you will use what you have learned in this course to make conclusions based on your results. What patterns/differences do you see in your data? How certain/uncertain are you in those results. THIS IS ONE OF THE MOST IMPORTANT SECTIONS OF THE TERM PROJECT. Demonstrate to us that you understand what your results can and cannot tell you. Make it as long as you need to.
+
+#Future Directions: Are there any confounding variables that your data/experimental design did not include? Briefly discuss what you would do differently if there were no restrictions placed on your design, aside from ethical and reasonable logistic considerations.
+
+#Citations: List citations in APA format.
+
+```
+
+# [Conclusions]{.ul}
+
+Based on my Experimental Design Analysis, I believe that I have enough evidence to claim that combining RNA-based therapeutics with small molecule drugs will lead to greater efficacy compared to either therapy alone.To design and analyze the model, I used the linear model (lm) function with the ANOVA test. The result of the residuals from this model represent the differences between the actual observed values and the predicted values from the model, including the minimum, median, and maximum residual values. The coefficient for TreatmentGroup RNA.based.Therapeutics is -0.16428. It indicates that on average, the efficacy for RNA-based therapeutics is lower by 0.16428 compared to the reference level. The coefficient for TreatmentGroup Small.Molecule.Drugs is -0.24545, which suggests that on average, efficacy for small molecule drugs is lower by 0.24545 compared to the reference level. The intercept value of about 3.87 suggests that there is a significant baseline efficacy value even when the "TreatmentGroup" variable is at its reference level. The multiple R-squared factor for efficacy is 0.1065, indicating the independent variable(s) account for about 10.65% of the total variability in the measures of efficacy or their synergistic effects. The R Squared value also represents the effect size, suggesting that there is a  difference in the effect of the combination than either drugs alone. More importantly, The resulting p-value of my transformed data comes out to be much less than our alpha value of 0.05. This means that we fail to reject the null hypothesis and suggests that there is enough evidence for me to claim there is a significant difference between combining RNA-based therapeutics with small molecule drugs either therapy alone. 
+
+The resulting degrees of freedom comes out to be 292, a high value that indicates a positive outcome. It suggests that there is a sufficient sample size or amount of data, which can lead to more precise and reliable statistical inferences. The F-statistic supports the p-value, suggesting that the model as a whole is significant in explaining the variability in the efficacy. The TukeyHSD() posthoc test suggests that there are no significant pairwise differences detected between any of the treatment group levels. This result of the pos thoc test indicates a positive outcome in which the treatments are comparable in terms of their impact on the dependent variable and that there is consistency in the treatment effects. It also strengthens the internal validity of the study and increases confidence in the findings (less confounding variables). 
+
+To reiterate, I used the Linear model with 3 categorical levels (ANOVA), and TukeyHSD() functions to model and test my experiment. 
+
+As for my figures, I used ggplot histogram and ggplot boxplot to visualize my model. Both figures suggest that there is significant difference between the combination of RNA-based therapies and small molecule drugs than either variable. The histogram indicates that the transformed data is normally distributed and the boxplot suggests that there is a higher set of values in the percentage of cells that take up/express the delivered mRNA. Hence these figures indicate that there is significant difference in efficacy for the combination of both drugs than each drug alone.
+
+Overall, the results of my experimental design analysis agree with my biological hypothesis and prediction in that the combination of RNA-based therapeutics with small molecule drugs results in a more effective cure. 
+
+------------------------------------------------------------------------
+
+# [Future Directions]{.ul}
+
+A couple of confounding variables that I did not include were the severity of the disease for each participant in each treatment group, and the characteristics of these participants. In this experimental design I did not stratify participants based on disease severity, which could have affected a bias in the efficacy results. In other words, the responses of the treatments could be misleading and bias due to an unfair level of the disease severity in each group. In this experiment I also did not consider the characteristics of the participants such as their age, gender, and their genetic profile. This confounding variable could also have the same effect as my first confounding variable in which the responses of these treatments would not be as consistent or even across each subgroup of treatment. 
+
+If there were no restrictions placed on my design, I would probably increase my sample size, as a larger sample size can provide more reliable and precise estimates of treatment effects. I would also include a control group that receives a placebo or standard treatment in addition to the three control groups. This would allow for a better comparison and assessment of the specific treatment effects. I would also  explore different doses and durations of the treatments to find potential dose-response relationships and optimal treatment procedures. This can provide insights into the therapeutic efficacy and help identify the most effective treatment approach. Then I would try to use advanced statistical techniques beyond ANOVA to further analyze the data, as well as seek advising and collaboration with other experts to study my experiment. 
+
+------------------------------------------------------------------------
+
+# [Citations]{.ul}
+
+Experimental Design - University of Central Arkansas — UCA, 
+  uca.edu/psychology/files/2013/08/Ch10-Experimental-Design_Statistical-Analysis-of-Data.pdf. Accessed 11   June 2023. 
+
+“Experimental Design.” Statistics How To, 7 Feb. 2023, www.statisticshowto.com/experimental-design/. 
